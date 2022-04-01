@@ -44,20 +44,6 @@ public class DetailHelpCommandTest {
     }
 
     @Test
-    public void execute_filterHelp_success() {
-        CommandResult expectedCommandResult = new CommandResult(HelpDescription.FILTER_COMMAND_DESCRIPTION,
-                null, true, false);
-        assertCommandSuccess(new DetailHelpCommand("filter"), model, expectedCommandResult, expectedModel);
-    }
-
-    @Test
-    public void execute_sortHelp_success() {
-        CommandResult expectedCommandResult = new CommandResult(HelpDescription.SORT_COMMAND_DESCRIPTION,
-                null, true, false);
-        assertCommandSuccess(new DetailHelpCommand("sort"), model, expectedCommandResult, expectedModel);
-    }
-
-    @Test
     public void execute_exitHelp_success() {
         CommandResult expectedCommandResult = new CommandResult(HelpDescription.EXIT_COMMAND_DESCRIPTION,
                 null, true, false);
